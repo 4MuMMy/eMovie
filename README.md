@@ -1,4 +1,3 @@
-# eMovie
 <h1>eMovie - PHP Movie Trailer CMS (Script & Theme)</h1>
 
 <h4>Features</h4>

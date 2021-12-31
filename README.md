@@ -49,4 +49,3 @@ You can easily change the settings via the "settings.php" file.
 <img src="https://github.com/4MuMMy/eMovie/blob/main/ss7.jpg?raw=true" />
 <img src="https://github.com/4MuMMy/eMovie/blob/main/ss8.jpg?raw=true" />
 <img src="https://github.com/4MuMMy/eMovie/blob/main/ss9.jpg?raw=true" />
-<img src="https://github.com/4MuMMy/eMovie/blob/main/ss1.jpg?raw=true" />

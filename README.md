@@ -37,3 +37,16 @@ Included: MySQL Sample Database, PHP CMS Files and Images<br />
 <br />
 Admin Panel Link: /_admin_<br />
 You can easily change the settings via the "settings.php" file.
+
+
+
+<img src="https://github.com/4MuMMy/eMovie/blob/main/ss1.jpg?raw=true" />
+<img src="https://github.com/4MuMMy/eMovie/blob/main/ss2.jpg?raw=true" />
+<img src="https://github.com/4MuMMy/eMovie/blob/main/ss3.jpg?raw=true" />
+<img src="https://github.com/4MuMMy/eMovie/blob/main/ss4.jpg?raw=true" />
+<img src="https://github.com/4MuMMy/eMovie/blob/main/ss5.jpg?raw=true" />
+<img src="https://github.com/4MuMMy/eMovie/blob/main/ss6.jpg?raw=true" />
+<img src="https://github.com/4MuMMy/eMovie/blob/main/ss7.jpg?raw=true" />
+<img src="https://github.com/4MuMMy/eMovie/blob/main/ss8.jpg?raw=true" />
+<img src="https://github.com/4MuMMy/eMovie/blob/main/ss9.jpg?raw=true" />
+<img src="https://github.com/4MuMMy/eMovie/blob/main/ss1.jpg?raw=true" />

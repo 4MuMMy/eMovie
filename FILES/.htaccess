@@ -1,0 +1,46 @@
+Options -Indexes
+DirectorySlash Off
+
+<IfModule mod_php5.c>
+	#5 year
+    php_value session.cookie_lifetime 155520000
+	#6 hours
+    php_value session.gc_maxlifetime 21600
+</IfModule>
+
+ErrorDocument 404 /404
+
+RewriteEngine On
+RewriteBase /
+
+RewriteRule ^sitemap sitemap.php [NC,L]
+RewriteRule ^sitemap.xml sitemap.php [NC,L]
+RewriteRule ^rss rss.php [NC,L]
+RewriteRule ^rss.xml rss.php [NC,L]
+RewriteRule ^_admin_/(.+)/(\d+)/(\d+)/? index.php?s=_xaxmin&k=$1&_id=$2&_sid=$3 [NC,L]
+RewriteRule ^_admin_/(.+)/(\d+)/? index.php?s=_xaxmin&k=$1&_id=$2 [NC,L]
+RewriteRule ^_admin_/(.+)/? index.php?s=_xaxmin&k=$1 [NC,L]
+RewriteRule ^_admin_ index.php?s=_xaxmin [NC,L]
+RewriteRule ^random index.php?s=_random [NC,L]
+RewriteRule ^contact index.php?s=_contact [NC,L]
+RewriteRule ^watch-movie/(\d+)/? index.php?s=watch-movie&page=$1 [NC,L]
+RewriteRule ^watch-movie index.php [NC,L]
+RewriteRule ^detailed-search/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(\d+)/? index.php?s=detailed_search&s1=$1&s2=$2&s3=$3&s4=$4&s5=$5&s6=$6&s7=$7&s8=$8&pg=$9 [NC,L]
+RewriteRule ^detailed-search/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/? index.php?s=detailed_search&s1=$1&s2=$2&s3=$3&s4=$4&s5=$5&s6=$6&s7=$7&s8=$8 [NC,L]
+RewriteRule ^movie-search/(.+)/(\d+)/? index.php?s=search&_searched=$1&pg=$2 [NC,L]
+RewriteRule ^movie-search/(.+)/? index.php?s=search&_searched=$1 [NC,L]
+RewriteRule ^watch-history/remove/(\d+)? index.php?s=watchHistory&remove=$1 [NC,L]
+RewriteRule ^watch-history index.php?s=watchHistory [NC,L]
+RewriteRule ^watch-list/remove/(\d+)? index.php?s=watchList&remove=$1 [NC,L]
+RewriteRule ^watch-list index.php?s=watchList [NC,L]
+RewriteRule ^setAjax/(.+)/(.+)/(.+)/? ajax.php?d=$1&p=$2&ajx=$3 [NC,L]
+RewriteRule ^autoComplete autoComplete.php [NC,L]
+RewriteRule ^categories/movies/(\d+)/? index.php?s=_categories&page=$1 [NC,L]
+RewriteRule ^categories/movies/? index.php?s=_categories [NC,L]
+RewriteRule ^all-movies/(.+)/(\d+)/(\d+)/? index.php?s=movies&kid=$2&page=$3 [NC,L]
+RewriteRule ^all-movies/(.+)/(\d+)/? index.php?s=movies&kid=$2 [NC,L]
+RewriteRule ^movie/(.+)/(.+)/(\d+)/? index.php?s=_movie&fid=$3 [NC,L]
+RewriteRule ^most-popular-movies index.php?s=most&which=1 [NC,L]
+RewriteRule ^top-rated-movies index.php?s=most&which=2 [NC,L]
+RewriteRule ^latest-movies index.php?s=most&which=3 [NC,L]
+RewriteRule ^404 index.php?s=404 [NC,L]
